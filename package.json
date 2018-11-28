@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Kivylius/react-ware.git"
+    "url": "git+https://github.com/warejs/react-ware.git"
   },
   "keywords": [
     "ware",
@@ -23,7 +23,7 @@
   "author": "Cezarijus Kivylius",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Kivylius/react-ware/issues"
+    "url": "https://github.com/warejs/react-ware/issues"
   },
-  "homepage": "https://github.com/Kivylius/react-ware#readme"
+  "homepage": "https://github.com/warejs/react-ware#readme"
 }
