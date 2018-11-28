@@ -1,0 +1,26 @@
+{
+  "name": "react-ware",
+  "version": "0.1.0",
+  "description": "Ware is an open source toolkit for developing desktop PWA with HTML, CSS, and JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kivylius/react-ware.git"
+  },
+  "keywords": [
+    "ware",
+    "pwa",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Cezarijus Kivylius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kivylius/react-ware/issues"
+  },
+  "homepage": "https://github.com/Kivylius/react-ware#readme"
+}
