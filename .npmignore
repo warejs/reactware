@@ -1,0 +1,12 @@
+# remove these from npm.
+/.github
+/docs
+/.docz
+/public
+/src
+package-lock.json
+.eslintignore
+.eslintrc
+.gitignore
+doczrc.js
+index.mdx

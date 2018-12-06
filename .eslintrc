@@ -1,0 +1,23 @@
+{
+  "extends": ["airbnb", "react-app"],
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js"]
+      }
+    ],
+    "max-len": ["error", 100],
+  },
+  "env": {
+    "browser": true
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./config/webpack-common-config.js"
+      }
+    }
+  }
+}

@@ -1,1 +1,26 @@
-<h1>hello from docs</h1>
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == XMLHttpRequest.DONE) {   // XMLHttpRequest.DONE == 4
+      if (xmlhttp.status == 200) {
+        var json = JSON.parse(xmlhttp.responseText);
+        console.log(json);
+        console.log(xmlhttp);
+      }
+      else if (xmlhttp.status == 400) {
+        console.log('There was an error 400');
+      }
+      else {
+        console.log('something else other than 200 was returned');
+      }
+    }
+  };
+
+  xmlhttp.open("GET", "https://api.github.com/repos/warejs/react-ware/contents/docs?ref=master", true);
+  xmlhttp.send();
+}
+</script>
+
+
+<meta http-equiv="refresh" content="0; URL='https://warejs.org/v0.2.0/'" />

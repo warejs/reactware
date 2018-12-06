@@ -1,0 +1,178 @@
+---
+name: WareLayoutFlex
+menu: Layouts
+route: /layouts/flex
+---
+
+import { Playground, PropsTable } from 'docz'
+import WareLayoutFlex from './WareLayoutFlex';
+
+# WareLayoutFlex
+
+Flexbox layout for ware-layout component. here you can find the raw css layout menthods
+
+## Horizontal Layout
+
+Here now enter something!?!
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex horizontal>
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+  </WareLayoutFlex>
+</Playground>
+
+## Flexible children with horizontal layout
+
+Specific children can utalise more space (given priority) over siblings.
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex horizontal>
+    <div>One</div>
+    <WareLayoutFlex auto>Two</WareLayoutFlex>
+    <div>Three</div>
+  </WareLayoutFlex>
+</Playground>
+
+## Flexible ratios
+
+Unlike bootstrap, the rations range between 1-12, but are only proprities and no scalable paters with dynamic resizing.
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex horizontal>
+    <WareLayoutFlex ratio="1">1</WareLayoutFlex>
+    <WareLayoutFlex ratio="2">2</WareLayoutFlex>
+    <WareLayoutFlex ratio="3">3</WareLayoutFlex>
+    <WareLayoutFlex ratio="6">6</WareLayoutFlex>
+  </WareLayoutFlex>
+</Playground>
+
+
+## Flexible children in vertical layouts
+
+Centent has can alligend based on v/h and prop position..
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex vertical style={{height:"250px"}}>
+    <div>One</div>
+    <WareLayoutFlex auto>Two</WareLayoutFlex>
+    <div>Three</div>
+  </WareLayoutFlex>
+</Playground>
+
+
+## Cross-axis stretch alignment
+
+Item can strech to take up tthe full contents.
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex horizontal style={{height:"150px"}}>
+    <div>One</div>
+  </WareLayoutFlex>
+</Playground>
+
+## Cross-axis stretch alignment
+
+Item can strech to take up tthe full contents.
+
+Alignments: `start`, `center`, `end`
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex vertical start>
+    <div>I'm here!</div>
+  </WareLayoutFlex>
+</Playground>
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex vertical center>
+    <div>I'm here!</div>
+  </WareLayoutFlex>
+</Playground>
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex vertical end>
+    <div>I'm here!</div>
+  </WareLayoutFlex>
+</Playground>
+
+
+## Justifications
+
+Item can strech to take up tthe full contents.
+
+
+Justifications: `justified` + `start`, `center`, `end`, `around`, `spaced`
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex horizontal justified center>
+    <div>One</div>
+    <div>Center</div>
+    <div>Tree</div>
+  </WareLayoutFlex>
+</Playground>
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex horizontal justified around>
+    <div>One</div>
+    <div>Around</div>
+    <div>Tree</div>
+  </WareLayoutFlex>
+</Playground>
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex horizontal justified spaced>
+    <div>One</div>
+    <div>Spaced</div>
+    <div>Tree</div>
+  </WareLayoutFlex>
+</Playground>
+
+
+## Self alignment
+
+Child items have the ability to be slef aligned, regardless of the parent aplighment..
+
+Self alignments: `start`, `center`, `end`,
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex horizontal style={{height:"150px"}}>
+    <WareLayoutFlex self start>Start</WareLayoutFlex>
+    <WareLayoutFlex self center>Center</WareLayoutFlex>
+    <WareLayoutFlex self end>End</WareLayoutFlex>
+    <WareLayoutFlex justified end>Justified end</WareLayoutFlex>
+  </WareLayoutFlex>
+</Playground>
+
+
+## Wrapping
+
+You can set wrapping on children to the wrap bellow siblings.
+
+Try redizing the Playground window to see the wrapping in actions
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex horizontal wrap>
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+    <div>five</div>
+    <div>six</div>
+    <div>seven</div>
+  </WareLayoutFlex>
+</Playground>
+
+<Playground className="warelayoutflex">
+  <WareLayoutFlex vertical wrap style={{height: "150px"}}>
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+    <div>four</div>
+    <div>five</div>
+    <div>six</div>
+    <div>seven</div>
+  </WareLayoutFlex>
+</Playground>
+
+<PropsTable of={WareLayoutFlex} />

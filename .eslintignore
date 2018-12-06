@@ -1,0 +1,10 @@
+# Ignore these files from linter
+node_modules/*
+public/*
+build/*
+config/*
+.git/*
+.github/*
+dist/*
+docs/*
+doczrc.js
