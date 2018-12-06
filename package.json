@@ -1,6 +1,6 @@
 {
   "name": "react-ware",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Ware is an open source toolkit for developing desktop PWA with HTML, CSS, and JS",
   "main": "dist/index.js",
   "dependencies": {
