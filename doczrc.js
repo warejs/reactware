@@ -4,6 +4,7 @@ export default {
   dest: `./docs/v${pkg.version}`,
   src: './src',
   base: `/v${pkg.version}/`,
+  hashRouter: true,
   htmlContext: {
     head: {
       links: [
