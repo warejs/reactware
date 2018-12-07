@@ -4,21 +4,21 @@ Reactware is an open source toolkit for developing desktop PWA with HTML, CSS, a
 
 ## Install and Usage
 
-```
+```shell
 npm i reactware --save
 ```
 
 ### Usage
-```
-import { WareLayoutFlex } from 'reactware';
+```js
+import * as Rw from 'reactware';
 
-<WareLayoutFlex horizontal>
+<Rw.Layouts.Flex horizontal>
   <div>One</div>
-  <div>Two</div>
+  <Rw.Layouts.Flex auto>Two</Rw.Layouts.Flex>
   <div>Three</div>
-</WareLayoutFlex>
+</Rw.Layouts.Flex>
 ```
 
 ## Contributions
 
-Contributions, issues and feature requests are very welcome. Please make sure to read the Contributing Guide before making a pull request.
+Contributions, issues and feature requests are very welcome. Please make sure to read the [Contributing Guide](https://github.com/warejs/reactware/blob/master/CONTRIBUTING.md) before making a pull request.
