@@ -21,4 +21,4 @@ import * as Rw from 'reactware';
 
 ## Contributions
 
-Contributions, issues and feature requests are very welcome. Please make sure to read the [Contributing Guide](https://github.com/warejs/reactware/blob/master/CONTRIBUTING.md) before making a pull request.
+Contributions, issues and feature requests are very welcome. Please make sure to read the [Contributing Guide](https://github.com/warejs/reactware/blob/master/contributing.md) before making a pull request.
