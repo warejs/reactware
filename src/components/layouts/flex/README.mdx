@@ -1,51 +1,55 @@
 ---
-name: WareLayoutFlex
+name: Flex
 menu: Layouts
 route: /layouts/flex
 ---
 
 import { Playground, PropsTable } from 'docz'
-import WareLayoutFlex from './WareLayoutFlex';
+import * as Rw from '../../../components';
 
-# WareLayoutFlex
+# Layouts: Flex
 
 Flexbox layout for ware-layout component. here you can find the raw css layout menthods
+
+```
+import { * as RW } from 'reactware';
+```
 
 ## Horizontal Layout
 
 Here now enter something!?!
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex horizontal>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex horizontal>
     <div>One</div>
     <div>Two</div>
     <div>Three</div>
-  </WareLayoutFlex>
+  </Rw.Layouts.Flex>
 </Playground>
 
 ## Flexible children with horizontal layout
 
 Specific children can utalise more space (given priority) over siblings.
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex horizontal>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex horizontal>
     <div>One</div>
-    <WareLayoutFlex auto>Two</WareLayoutFlex>
+    <Rw.Layouts.Flex auto>Two</Rw.Layouts.Flex>
     <div>Three</div>
-  </WareLayoutFlex>
+  </Rw.Layouts.Flex>
 </Playground>
 
 ## Flexible ratios
 
 Unlike bootstrap, the rations range between 1-12, but are only proprities and no scalable paters with dynamic resizing.
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex horizontal>
-    <WareLayoutFlex ratio="1">1</WareLayoutFlex>
-    <WareLayoutFlex ratio="2">2</WareLayoutFlex>
-    <WareLayoutFlex ratio="3">3</WareLayoutFlex>
-    <WareLayoutFlex ratio="6">6</WareLayoutFlex>
-  </WareLayoutFlex>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex horizontal>
+    <Rw.Layouts.Flex ratio="1">1</Rw.Layouts.Flex>
+    <Rw.Layouts.Flex ratio="2">2</Rw.Layouts.Flex>
+    <Rw.Layouts.Flex ratio="3">3</Rw.Layouts.Flex>
+    <Rw.Layouts.Flex ratio="6">6</Rw.Layouts.Flex>
+  </Rw.Layouts.Flex>
 </Playground>
 
 
@@ -53,12 +57,12 @@ Unlike bootstrap, the rations range between 1-12, but are only proprities and no
 
 Centent has can alligend based on v/h and prop position..
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex vertical style={{height:"250px"}}>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex vertical style={{height:"250px"}}>
     <div>One</div>
-    <WareLayoutFlex auto>Two</WareLayoutFlex>
+    <Rw.Layouts.Flex auto>Two</Rw.Layouts.Flex>
     <div>Three</div>
-  </WareLayoutFlex>
+  </Rw.Layouts.Flex>
 </Playground>
 
 
@@ -66,10 +70,10 @@ Centent has can alligend based on v/h and prop position..
 
 Item can strech to take up tthe full contents.
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex horizontal style={{height:"150px"}}>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex horizontal style={{height:"150px"}}>
     <div>One</div>
-  </WareLayoutFlex>
+  </Rw.Layouts.Flex>
 </Playground>
 
 ## Cross-axis stretch alignment
@@ -78,22 +82,22 @@ Item can strech to take up tthe full contents.
 
 Alignments: `start`, `center`, `end`
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex vertical start>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex vertical start>
     <div>I'm here!</div>
-  </WareLayoutFlex>
+  </Rw.Layouts.Flex>
 </Playground>
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex vertical center>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex vertical center>
     <div>I'm here!</div>
-  </WareLayoutFlex>
+  </Rw.Layouts.Flex>
 </Playground>
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex vertical end>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex vertical end>
     <div>I'm here!</div>
-  </WareLayoutFlex>
+  </Rw.Layouts.Flex>
 </Playground>
 
 
@@ -104,28 +108,28 @@ Item can strech to take up tthe full contents.
 
 Justifications: `justified` + `start`, `center`, `end`, `around`, `spaced`
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex horizontal justified center>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex horizontal justified center>
     <div>One</div>
     <div>Center</div>
     <div>Tree</div>
-  </WareLayoutFlex>
+  </Rw.Layouts.Flex>
 </Playground>
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex horizontal justified around>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex horizontal justified around>
     <div>One</div>
     <div>Around</div>
     <div>Tree</div>
-  </WareLayoutFlex>
+  </Rw.Layouts.Flex>
 </Playground>
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex horizontal justified spaced>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex horizontal justified spaced>
     <div>One</div>
     <div>Spaced</div>
     <div>Tree</div>
-  </WareLayoutFlex>
+  </Rw.Layouts.Flex>
 </Playground>
 
 
@@ -135,13 +139,13 @@ Child items have the ability to be slef aligned, regardless of the parent apligh
 
 Self alignments: `start`, `center`, `end`,
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex horizontal style={{height:"150px"}}>
-    <WareLayoutFlex self start>Start</WareLayoutFlex>
-    <WareLayoutFlex self center>Center</WareLayoutFlex>
-    <WareLayoutFlex self end>End</WareLayoutFlex>
-    <WareLayoutFlex justified end>Justified end</WareLayoutFlex>
-  </WareLayoutFlex>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex horizontal style={{height:"150px"}}>
+    <Rw.Layouts.Flex self start>Start</Rw.Layouts.Flex>
+    <Rw.Layouts.Flex self center>Center</Rw.Layouts.Flex>
+    <Rw.Layouts.Flex self end>End</Rw.Layouts.Flex>
+    <Rw.Layouts.Flex justified end>Justified end</Rw.Layouts.Flex>
+  </Rw.Layouts.Flex>
 </Playground>
 
 
@@ -151,8 +155,8 @@ You can set wrapping on children to the wrap bellow siblings.
 
 Try redizing the Playground window to see the wrapping in actions
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex horizontal wrap>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex horizontal wrap>
     <div>one</div>
     <div>two</div>
     <div>three</div>
@@ -160,11 +164,11 @@ Try redizing the Playground window to see the wrapping in actions
     <div>five</div>
     <div>six</div>
     <div>seven</div>
-  </WareLayoutFlex>
+  </Rw.Layouts.Flex>
 </Playground>
 
-<Playground className="warelayoutflex">
-  <WareLayoutFlex vertical wrap style={{height: "150px"}}>
+<Playground className="Rw.Layouts.Flex">
+  <Rw.Layouts.Flex vertical wrap style={{height: "150px"}}>
     <div>one</div>
     <div>two</div>
     <div>three</div>
@@ -172,7 +176,7 @@ Try redizing the Playground window to see the wrapping in actions
     <div>five</div>
     <div>six</div>
     <div>seven</div>
-  </WareLayoutFlex>
+  </Rw.Layouts.Flex>
 </Playground>
 
-<PropsTable of={WareLayoutFlex} />
+<PropsTable of={Rw.Layouts.Flex} />

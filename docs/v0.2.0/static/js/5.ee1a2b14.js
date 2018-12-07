@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"./.docz/app/imports.js":function(n,o,e){"use strict";e.r(o),e.d(o,"imports",function(){return t});var t={"components/index.mdx":function(){return e.e(2).then(e.bind(null,"./src/components/index.mdx"))},"components/layouts/flex/README.mdx":function(){return Promise.all([e.e(0),e.e(3)]).then(e.bind(null,"./src/components/layouts/flex/README.mdx"))}}}},0,[0,3,2]]);
-//# sourceMappingURL=5.d6c2f69f4bad25fb389d.js.map

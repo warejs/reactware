@@ -1,3 +1,5 @@
-import WareLayoutFlex from "./flex";
+import Flex from './flex';
 
-export { WareLayoutFlex };
+const Grid = {};
+
+export { Flex, Grid };

@@ -8,5 +8,6 @@ package-lock.json
 .eslintignore
 .eslintrc
 .gitignore
+.babelrc
 doczrc.js
 index.mdx

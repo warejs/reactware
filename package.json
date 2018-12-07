@@ -1,10 +1,15 @@
 {
-  "name": "react-ware",
-  "version": "0.2.1",
-  "description": "Ware is an open source toolkit for developing desktop PWA with HTML, CSS, and JS",
+  "name": "reactware",
+  "version": "0.2.2",
+  "description": "Reactware is an open source toolkit for developing desktop PWA with HTML, CSS, and JS",
   "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
-    "node-sass": "^4.10.0",
+    "docz": "^0.12.15",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -13,12 +18,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && npm run babel && docz build",
+    "babel": "npx babel src/components --out-dir dist --ignore *.mdx",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src -c .eslintrc --ext js",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build"
+    "docz": "docz dev"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,7 +36,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/warejs/react-ware.git"
+    "url": "git+https://github.com/warejs/reactware.git"
   },
   "keywords": [
     "ware",
@@ -47,11 +52,16 @@
   "author": "WareJS.org",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/warejs/react-ware/issues"
+    "url": "https://github.com/warejs/reactware/issues"
   },
   "homepage": "https://warejs.org",
   "devDependencies": {
-    "docz": "^0.12.15",
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-preset-react-app": "^6.1.0",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-import-resolver-webpack": "^0.10.1",

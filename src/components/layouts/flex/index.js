@@ -1,3 +1,3 @@
-import WareLayoutFlex from './WareLayoutFlex';
+import Flex from './Flex';
 
-export default WareLayoutFlex;
+export default Flex;
