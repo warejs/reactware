@@ -21,7 +21,7 @@ export default {
       ],
       raw: [`
         <style>
-          .Layout.Flex > div > div {
+          .Rw_Layouts_Flex > div > div {
             border: 1px solid gray;
             margin-right: 15px;
             padding: 10px 25px;

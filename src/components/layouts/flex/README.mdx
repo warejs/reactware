@@ -19,7 +19,7 @@ import { * as RW } from 'reactware';
 
 Here now enter something!?!
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex horizontal>
     <div>One</div>
     <div>Two</div>
@@ -31,7 +31,7 @@ Here now enter something!?!
 
 Specific children can utalise more space (given priority) over siblings.
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex horizontal>
     <div>One</div>
     <Rw.Layouts.Flex auto>Two</Rw.Layouts.Flex>
@@ -43,7 +43,7 @@ Specific children can utalise more space (given priority) over siblings.
 
 Unlike bootstrap, the rations range between 1-12, but are only proprities and no scalable paters with dynamic resizing.
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex horizontal>
     <Rw.Layouts.Flex ratio="1">1</Rw.Layouts.Flex>
     <Rw.Layouts.Flex ratio="2">2</Rw.Layouts.Flex>
@@ -57,7 +57,7 @@ Unlike bootstrap, the rations range between 1-12, but are only proprities and no
 
 Centent has can alligend based on v/h and prop position..
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex vertical style={{height:"250px"}}>
     <div>One</div>
     <Rw.Layouts.Flex auto>Two</Rw.Layouts.Flex>
@@ -70,7 +70,7 @@ Centent has can alligend based on v/h and prop position..
 
 Item can strech to take up tthe full contents.
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex horizontal style={{height:"150px"}}>
     <div>One</div>
   </Rw.Layouts.Flex>
@@ -82,19 +82,19 @@ Item can strech to take up tthe full contents.
 
 Alignments: `start`, `center`, `end`
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex vertical start>
     <div>I'm here!</div>
   </Rw.Layouts.Flex>
 </Playground>
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex vertical center>
     <div>I'm here!</div>
   </Rw.Layouts.Flex>
 </Playground>
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex vertical end>
     <div>I'm here!</div>
   </Rw.Layouts.Flex>
@@ -108,7 +108,7 @@ Item can strech to take up tthe full contents.
 
 Justifications: `justified` + `start`, `center`, `end`, `around`, `spaced`
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex horizontal justified center>
     <div>One</div>
     <div>Center</div>
@@ -116,7 +116,7 @@ Justifications: `justified` + `start`, `center`, `end`, `around`, `spaced`
   </Rw.Layouts.Flex>
 </Playground>
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex horizontal justified around>
     <div>One</div>
     <div>Around</div>
@@ -124,7 +124,7 @@ Justifications: `justified` + `start`, `center`, `end`, `around`, `spaced`
   </Rw.Layouts.Flex>
 </Playground>
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex horizontal justified spaced>
     <div>One</div>
     <div>Spaced</div>
@@ -139,7 +139,7 @@ Child items have the ability to be slef aligned, regardless of the parent apligh
 
 Self alignments: `start`, `center`, `end`,
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex horizontal style={{height:"150px"}}>
     <Rw.Layouts.Flex self start>Start</Rw.Layouts.Flex>
     <Rw.Layouts.Flex self center>Center</Rw.Layouts.Flex>
@@ -155,7 +155,7 @@ You can set wrapping on children to the wrap bellow siblings.
 
 Try redizing the Playground window to see the wrapping in actions
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex horizontal wrap>
     <div>one</div>
     <div>two</div>
@@ -167,7 +167,7 @@ Try redizing the Playground window to see the wrapping in actions
   </Rw.Layouts.Flex>
 </Playground>
 
-<Playground className="Rw.Layouts.Flex">
+<Playground className="Rw_Layouts_Flex">
   <Rw.Layouts.Flex vertical wrap style={{height: "150px"}}>
     <div>one</div>
     <div>two</div>
