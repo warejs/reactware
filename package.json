@@ -1,6 +1,6 @@
 {
   "name": "reactware",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Reactware is an open source toolkit for developing desktop PWA with HTML, CSS, and JS",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -8,14 +8,7 @@
     "dist",
     "README.md"
   ],
-  "dependencies": {
-    "docz": "^0.12.15",
-    "prop-types": "^15.6.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1",
-    "styled-components": "^4.1.2"
-  },
+  "dependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf dist && npm run babel && docz build",
@@ -62,11 +55,17 @@
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "babel-preset-react-app": "^6.1.0",
+    "docz": "^0.12.15",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-import-resolver-webpack": "^0.10.1",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "^2.1.1",
+    "styled-components": "^4.1.2"
   }
 }
