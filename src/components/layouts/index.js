@@ -1,5 +1,4 @@
 import Flex from './flex';
-
-const Grid = {};
+import Grid from './grid';
 
 export { Flex, Grid };

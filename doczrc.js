@@ -22,11 +22,23 @@ export default {
       raw: [`
         <style>
           .Rw_Layouts_Flex > div > div {
-            border: 1px solid gray;
+            border: 1px solid #ced4dd;
             margin-right: 15px;
-            padding: 10px 25px;
+            padding: 10px;
             border-radius: 1px;
             text-align:center;
+            background: #eef1f5
+          }
+          .Rw_Layouts_Grid > div,
+          .Rw_Layouts_Grid > div > div > div  {
+            grid-gap: 16px;
+          }
+          .Rw_Layouts_Grid > div > div,
+          .Rw_Layouts_Grid > div > div > div > div {
+            border: 1px solid #ced4dd;
+            padding: 10px;
+            text-align: center;
+            background: #eef1f5
           }
         </style>
       `],

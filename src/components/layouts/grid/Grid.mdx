@@ -1,0 +1,155 @@
+---
+name: Grid
+menu: Layouts
+route: /layouts/grid
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../components';
+
+# Layouts: Grid
+
+Grid layout for ware-layout components. here you can find the raw css layout menthods
+
+```jsx
+import * as RW from 'reactware';
+```
+
+## Implicit Columns
+
+Implicit uniform columns can define their values at the parent grid element
+
+Columns: `1` (default), `2`, `....`
+
+<Playground className="Rw_Layouts_Grid">
+  <Rw.Layouts.Grid columns="3">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+  </Rw.Layouts.Grid>
+</Playground>
+
+
+## Fixed Columns
+
+Implicit uniform columns can define their values at the parent grid element
+
+Widths: `<value> <value> ....`
+
+<Playground className="Rw_Layouts_Grid">
+  <Rw.Layouts.Grid columns="5" widths="75px 125px auto 100px 135px">
+    <div>75px</div>
+    <div>125px</div>
+    <div>auto</div>
+    <div>100px</div>
+    <div>135px</div>
+  </Rw.Layouts.Grid>
+</Playground>
+
+## Responsive Grid
+
+Define columns by setting the min width value for a responsive grid system.
+
+Min: `<value> px/em/%`
+Max (optional): `<value> px/em/%`
+
+<Playground className="Rw_Layouts_Grid">
+  <Rw.Layouts.Grid min="200px">
+    <div>200px</div>
+    <div>Min</div>
+    <div>200px</div>
+    <div>Min</div>
+    <div>200px</div>
+  </Rw.Layouts.Grid>
+</Playground>
+
+## Explicit Columns
+
+Columns that are not uniform can define their column span value directly on the column element.
+
+Span: `1`, `2`, `....`, `∞`, 
+
+<Playground className="Rw_Layouts_Grid">
+  <Rw.Layouts.Grid columns="12">
+    <Rw.Layouts.Grid span="12">12</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid span="4">4</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid span="3">3</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid span="2">2</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid span="3">3</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid span="6">6</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid span="3">3</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid span="3">3</Rw.Layouts.Grid>
+  </Rw.Layouts.Grid>
+</Playground>
+
+## Self alignment
+
+Child items have the ability to be slef aligned, regardless of the parent aplighment..
+
+Self alignments: `start`, `center`, `end`
+
+<Playground className="Rw_Layouts_Grid">
+  <Rw.Layouts.Grid>
+    <Rw.Layouts.Grid self start>Start</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid self center>Center</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid self end>End</Rw.Layouts.Grid>
+  </Rw.Layouts.Grid>
+</Playground>
+
+## Line-based placement
+
+Child items have the ability to be slef aligned, regardless of the parent aplighment..
+
+Track: `<value1> <value2>` (column row) 
+
+<Playground className="Rw_Layouts_Grid">
+  <Rw.Layouts.Grid columns="3">
+    <Rw.Layouts.Grid track="1/3 1">A</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid track="3 1/3">B</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid track="1 2">C</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid track="2 2">D</Rw.Layouts.Grid>
+  </Rw.Layouts.Grid>
+</Playground>
+
+## Nested Grid
+
+A simple example of nesting one grid inside another. Any grid Area can become a grid itself.
+
+<Playground className="Rw_Layouts_Grid">
+  <Rw.Layouts.Grid columns="3">
+    <Rw.Layouts.Grid track="1/3 1">A</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid track="3 1/3">B</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid track="1 2">C</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid track="2 2">
+      <Rw.Layouts.Grid min="50px">
+        <div>200px</div>
+        <div>Min</div>
+        <div>200px</div>
+        <div>Min</div>
+        <div>200px</div>
+      </Rw.Layouts.Grid>
+    </Rw.Layouts.Grid>
+  </Rw.Layouts.Grid>
+</Playground>
+
+## Overlay
+
+A example of two or more items overlaying eachother.
+
+<Playground className="Rw_Layouts_Grid">
+  <Rw.Layouts.Grid columns="3">
+    <Rw.Layouts.Grid track="1/3 1">A</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid track="3 1/3">B</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid track="1 2">C</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid track="2 2">D</Rw.Layouts.Grid>
+    <Rw.Layouts.Grid 
+      style={{background: 'rgba(11,95,255,0.5)'}} 
+      track="1/3 1/3">
+    </Rw.Layouts.Grid>
+  </Rw.Layouts.Grid>
+</Playground>
+
+
+<PropsTable of={Rw.Layouts.Grid} />

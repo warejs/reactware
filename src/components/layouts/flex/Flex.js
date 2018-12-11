@@ -29,14 +29,6 @@ const FlexStyled = styled.div`
 
 `;
 
-// & > div {
-//     border: 1px solid gray;
-//     margin-right: 15px;
-//     padding: 10px 25px;
-//     border-radius: 1px;
-//     text-align:center;
-//   }
-
 export default class Flex extends React.Component {
   static propTypes = {
     horizontal: PropTypes.bool,
