@@ -1,0 +1,72 @@
+---
+name: Float
+menu: Layouts
+route: /layouts/float
+---
+
+import { Playground, PropsTable } from 'docz';
+import * as Rw from '../../../components';
+
+# Layouts: Float
+
+Absolute layout for ware-layout components. here you can find the raw css layout menthods
+
+```jsx
+import * as RW from 'reactware';
+```
+
+## Position Absolute
+
+Depending on its parent the item is absoluted
+
+<Playground className="Rw_Layouts_Absolute">
+  <Rw.Layouts.Float absolute right="10px" bottom="10px">
+    Absolute top 10px, right 10px, left 10px
+  </Rw.Layouts.Float>
+</Playground>
+
+<Playground className="Rw_Layouts_Absolute" style={{width: "250px"}}>
+  <Rw.Layouts.Float absolute top="25" left="139px" width="250px" height="50px">
+    Absolute top 139px, left 33px, width 250px, height 50px;
+  </Rw.Layouts.Float>
+</Playground>
+
+## Position Relative
+
+Passing prop wrap will wrap the container in relative fixing postion issues on inline contents.
+This create an empty wrapper (seen in example as small box) and postion will be based from this locations.
+
+<Playground className="Rw_Layouts_Absolute">
+  <Rw.Layouts.Float absolute wrap top="10px" left="10px" width="200px">
+    Absolute top 10px, bottom 10px
+  </Rw.Layouts.Float>
+</Playground>
+
+Even more sence is made when used inline.
+
+<Playground className="Rw_Layouts_Absolute">
+  Hello im a sample
+  <Rw.Layouts.Float absolute wrap top="25px" left="0px" width="200px">
+    Absolute top 25px, left 0px, width:200px;
+  </Rw.Layouts.Float>
+  that likes to play nice.
+</Playground>
+
+> ** *NOTE* : A width will be required for wrapped components as the parent is 0px and content will colapse **
+
+## Position Fixed
+
+A special characteristic of the element with `fixed` is that you can anchor its four sides with the four sides of your browser's viewport. In that case, if the size of the viewport changes, the size of this element changes accordingly
+
+<Playground className="Rw_Layouts_Fixed">
+  <Rw.Utils.Frame>
+    <Rw.Layouts.Float fixed bottom="40px" right="35px" top="25px" style={{background:'#eef1f5', padding: '10px'}}>
+      Absolute bottom 40px, right 25px, top 25px;
+    </Rw.Layouts.Float>
+  </Rw.Utils.Frame>
+</Playground>
+
+> ** *NOTE* : In example above, item is wraped in a Frame (iframe) for demo. **
+
+
+<PropsTable of={Rw.Layouts.Float} />

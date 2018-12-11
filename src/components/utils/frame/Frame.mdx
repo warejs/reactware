@@ -1,0 +1,28 @@
+---
+name: Frame
+menu: Utils
+route: /utils/frame
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../components';
+
+# Utils: Frame
+
+Frame is a iframe util that include the styles from parent (styled) using for React portals.
+
+```jsx
+import * as RW from 'reactware';
+```
+
+Example of component displaying in iframe.
+
+<Playground className="Rw_Utils_Frame">
+  <Rw.Utils.Frame>
+    <Rw.Layouts.Float fixed bottom="40px" right="35px" top="25px" style={{background:'#eef1f5', padding: '10px'}}>
+      Absolute bottom 40px, right 25px, top 25px;
+    </Rw.Layouts.Float>
+  </Rw.Utils.Frame>
+</Playground>
+
+<PropsTable of={Rw.Utils.Frame} />

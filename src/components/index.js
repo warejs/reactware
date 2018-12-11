@@ -1,8 +1,7 @@
 import * as Layouts from './layouts';
-
-const Trip = {};
+import * as Utils from './utils';
 
 export {
   Layouts,
-  Trip,
+  Utils,
 };

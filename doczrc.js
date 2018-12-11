@@ -40,6 +40,39 @@ export default {
             text-align: center;
             background: #eef1f5
           }
+          .Rw_Layouts_Absolute {
+            height: 150px;
+          }
+
+          .Rw_Layouts_Absolute > div {
+            border: 1px solid #ced4dd;
+            padding: 10px;
+            background: #eef1f5
+          }
+
+          .Rw_Layouts_Absolute > div > div {
+            border: 1px solid #ced4dd;
+            padding: 10px;
+            background: #d7d9de;
+          }
+
+          .Rw_Layouts_Fixed {
+            height: 215px;
+          }
+
+          .Rw_Layouts_Fixed iframe {
+            width: 100%;
+            border: none;
+            top: 0;
+            left: 0px;
+            position: absolute;
+            height: 215px;
+          }
+
+          .Rw_Utils_Frame iframe {
+            border: 1px dotted #ced4dd; 
+          }
+
         </style>
       `],
     },
