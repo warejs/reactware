@@ -1,0 +1,63 @@
+---
+name: Select
+menu: UI
+route: /ui/select
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../components';
+
+# UI: Select
+
+Select is a graphical control element that allows the user to select one or more items from a list contained within a static, multiple line text box
+
+```jsx
+import * as RW from 'reactware';
+```
+
+<Playground className="Rw_UI_Select dark_theme">
+  <Rw.UI.Select 
+    options={[
+      { label: "Alligators", value: 'id1' },
+      { label: "Crocodiles", value: 'id2' },
+      { label: "Sharks", value: 'id3' },
+      { label: "Small crocodiles", value: 'id4' },
+      { label: "Smallest crocodiles", value: 'id5' },
+      { label: "Snakes", value: 'id7' },
+    ]} 
+    onChange={(value, option) => console.log('onChange1', value, option)} 
+  />
+</Playground>
+
+<Playground className="Rw_UI_Select dark_theme">
+  <Rw.UI.Select 
+    selected="id3"
+    options={[
+      { label: "Alligators", value: 'id1' },
+      { label: "Crocodiles", value: 'id2' },
+      { label: "Sharks", value: 'id3' },
+      { label: "Small crocodiles", value: 'id4' },
+      { label: "Smallest crocodiles", value: 'id5' },
+      { label: "Snakes", value: 'id7' },
+    ]} 
+    onChange={(value, option) => console.log('onChange1', value, option)} 
+  />
+</Playground>
+
+<Playground className="Rw_UI_Select dark_theme">
+  <Rw.UI.Select 
+    selected={["id3", "id4"]}
+    multiple
+    options={[
+      { label: "Alligators", value: 'id1' },
+      { label: "Crocodiles", value: 'id2' },
+      { label: "Sharks", value: 'id3' },
+      { label: "Small crocodiles", value: 'id4' },
+      { label: "Smallest crocodiles", value: 'id5' },
+      { label: "Snakes", value: 'id7' },
+    ]} 
+    onChange={(value, option) => console.log('onChange2', value, option)} 
+  />
+</Playground>
+
+<PropsTable of={Rw.UI.Select} />

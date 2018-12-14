@@ -1,0 +1,46 @@
+---
+name: Combotext
+menu: UI
+route: /ui/combotext
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../components';
+
+# UI: Combotext
+
+Text and dropdown.
+
+```jsx
+import * as RW from 'reactware';
+```
+
+<Playground className="Rw_UI_Buttons_Split dark_theme">
+  <Rw.UI.Combotext
+    default={1} 
+    options={[
+      { label: '100 px', value: '100px' },
+      { label: '200 px', value: '200px' },
+    ]}
+    onChange={value => console.log("selected1", value)}
+  />
+</Playground>
+
+In a more complicated example, we can pass a option callback once a option is selected. The current value is the first paramater and the return value is what will inputed into the box.
+
+<Playground className="Rw_UI_Buttons_Split dark_theme">
+  <Rw.UI.Combotext
+    placeholder="Placeholder..."
+    options={[
+      { label: 'Reset', value: '' },
+      { label: 'Add "int" to end', callback: (value) => value + "-ing" },
+      { label: 'Random Value', callback: () => (`${Math.random()*100}`) }
+    ]}
+    onChange={(value, option, event) => console.log("selected2", value, option)}
+  />
+</Playground>
+
+<PropsTable of={Rw.UI.Combotext} />
+
+
+

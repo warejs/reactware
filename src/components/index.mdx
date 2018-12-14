@@ -3,23 +3,68 @@ name: Introduction
 route: /
 ---
 
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../components';
+
 # Introduction
 
-Ware is an open source toolkit for developing desktop PWA with HTML, CSS, and JS.
+## What is Reactware ?
 
-## Install and Usage
+reactware is an open source toolkit for developing desktop PWA with HTML, CSS, and JS. It contains a vast selection of ui components, ranging from layout helpers (for flex, grid and floats) to UI components to help you design you next webapp. The focus of this library to to allow users to create dekstop like apps (e.g GIMP) in the browser. 
+
+## Getting Started
+
+If you have a react project already setup you can simple run this command in your shell or cmd and you will add the pakage to your dependncies.
 
 ```shell
-npm i reactware --save
+yarn add reactware
+```
+or
+```shell
+npm i -S reactware 
 ```
 
-### Usage
-```jsx
-import * as Rw from 'reactware';
+If you **dont** have a react project setup and want to play around this pakage then we recomend the awsome react pakage called create-react-app. This will install react and all the nessseosry pakages to get you started. Simple run:
 
-<Rw.Layouts.Flex horizontal>
-  <div>One</div>
-  <Rw.Layouts.Flex auto>Two</Rw.Layouts.Flex>
-  <div>Three</div>
-</Rw.Layouts.Flex>
+```shell
+npx create-react-app MySimpleApp
 ```
+
+Once this completes, you can run the above comman (`yarn add reactware` or `npm i -S reactware`) and this will add reactware library to the create-react-app package. PS: remeber to `cd into MySimpleApp` else npm/yarn wont work. 
+
+Once you installed above pakage, you can open in your favorite editor and edit `src/App.js` where you will the create-react-apps sample component. You can remove most of the content from the render and just add a simple reactware component e.g:
+
+```
+import React, { Component } from 'react';
+import * as Rw from './components';
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Rw.UI.Button>My Button</Rw.UI.Button>
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+
+The above should render a button, just like the one bellow this text. Do you see it?
+
+<Playground className="Rw_Utils_Frame">
+  {/* PS: Go ahead, you can edit me! */}
+  <Rw.UI.Button>My Button</Rw.UI.Button>
+</Playground>
+
+> Btw click the button that has `<>` and this will show you the code for this component. Where you can *EDIT* the code itself to playaround with it here, in the browser, #fun.
+
+## Components
+
+Browse the library for the remaining component and best of luck with you app.

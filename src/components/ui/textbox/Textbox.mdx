@@ -1,0 +1,26 @@
+---
+name: Textbox
+menu: UI
+route: /ui/textbox
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../components';
+
+# UI: Textbox
+
+Textbox is a graphical control element intended to enable the user to input text.
+
+```jsx
+import * as RW from 'reactware';
+```
+
+<Playground className="Rw_UI_Textbox dark_theme">
+  <Rw.UI.Textbox
+    value=""
+    placeholder="Placeholder.."
+    onChange={(value, event) => console.log(value)} 
+  />
+</Playground>
+
+<PropsTable of={Rw.UI.Textbox} />

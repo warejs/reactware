@@ -1,0 +1,27 @@
+---
+name: Spinner
+menu: UI
+route: /ui/spinner
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../components';
+
+# UI: Spinner
+
+Select is a value input control which has small up and down buttons.
+
+```jsx
+import * as RW from 'reactware';
+```
+
+<Playground className="Rw_UI_Spinner dark_theme">
+  <Rw.UI.Spinner
+    max="10"
+    step="2"
+    value="2"   
+    onChange={(value, option) => console.log(value, option)} 
+  />
+</Playground>
+
+<PropsTable of={Rw.UI.Spinner} />

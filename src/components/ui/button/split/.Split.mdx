@@ -1,0 +1,33 @@
+---
+name: SplitButton
+menu: UI
+route: /ui/button/split
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../../components';
+
+# UI: RadioButton
+
+Split Button control combining a button (typically invoking some default action).
+
+```jsx
+import * as RW from 'reactware';
+```
+
+<Playground className="Rw_UI_Buttons_Split dark_theme">
+  <Rw.UI.Buttons.Split
+    default={1} 
+    options={[
+      { label: 'Save', onClick: () => alert('saved') },
+      { label: 'Publish', onClick: () => alert('published') },
+      { label: 'Exit', onClick: () => alert('edit') }
+    ]}
+    onSelect={(index, option) => alert("selected", index, option)}
+  />
+</Playground>
+
+<PropsTable of={Rw.UI.Buttons.Split} />
+
+
+

@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 
 import * as Rw from './components';
 
+console.log("RW-> ", Rw);
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -13,11 +15,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Rw.Layouts.Flex horizontal>
-          <div>One</div>
-          <Rw.Layouts.Flex auto>Two</Rw.Layouts.Flex>
-          <div>Three</div>
-        </Rw.Layouts.Flex>
+        <Rw.UI.Textarea
+          value=""
+          placeholder="Edit me..."
+          onChange={(value) => console.log(value)} 
+        />
       </div>
     );
   }

@@ -1,0 +1,38 @@
+---
+name: Combobox
+menu: UI
+route: /ui/Combobox
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../components';
+
+# UI: Combobox
+
+Combobox is A combination of a single-line text box and list box, allowing the user to either type a value directly into the control or choose from the list of existing options..
+
+```jsx
+import * as RW from 'reactware';
+```
+
+<Playground className="Rw_UI_Combobox dark_theme">
+  <Rw.UI.Combobox
+    search=""
+    placeholder="Search..."
+    onChange={(value, option) => { 
+      console.warn('final output: ', value, option)
+    }} 
+    options={[
+    { label: 'Alligators', value: 'id1' },
+    { label: 'Crocodiles', value: 'id2' },
+    { label: 'Sharks', value: 'id3' },
+    { label: 'Small crocodiles', value: 'id4' },
+    { label: 'Smallest crocodiles', value: 'id5' },
+    { label: 'Snakes', value: 'id7' },
+  ]}
+  />
+</Playground>
+
+> Option is only returned when a option is chosen, else null is returned.
+
+<PropsTable of={Rw.UI.Combobox} />
