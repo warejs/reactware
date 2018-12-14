@@ -11,6 +11,10 @@ export default {
   src: './src',
   base: `/v${version}/`,
   hashRouter: true,
+  themeConfig: {
+    
+    showPlaygroundEditor: true,
+  },
   htmlContext: {
     head: {
       links: [
@@ -18,6 +22,10 @@ export default {
           rel: 'stylesheet',
           href: '.docz/public/index.css',
         },
+        {
+          rel: 'stylesheet',
+          href: 'https://codemirror.net/theme/eclipse.css'
+        }
       ],
       raw: [`
         <style>
@@ -71,6 +79,10 @@ export default {
 
           .Rw_Utils_Frame iframe {
             border: 1px dotted #ced4dd; 
+          }
+
+          .dark_theme {
+            background: #535353
           }
 
         </style>

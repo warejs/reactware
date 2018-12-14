@@ -1,0 +1,26 @@
+---
+name: Textarea
+menu: UI
+route: /ui/textarea
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../components';
+
+# UI: Textarea
+
+Textarea is a graphical control element for larger input (paragraphs).
+
+```jsx
+import * as RW from 'reactware';
+```
+
+<Playground className="Rw_UI_Textarea dark_theme">
+  <Rw.UI.Textarea
+    value=""
+    placeholder="Edit me..."
+    onChange={(value) => console.log(value)} 
+  />
+</Playground>
+
+<PropsTable of={Rw.UI.Textarea} />

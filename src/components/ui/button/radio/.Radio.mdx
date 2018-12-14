@@ -1,0 +1,33 @@
+---
+name: RadioButton
+menu: UI
+route: /ui/button/radio
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../../components';
+
+# UI: RadioButton
+
+Radio Button control which can be clicked upon to select one option from a selection of options
+
+```jsx
+import * as RW from 'reactware';
+```
+
+## Default Radio Button
+
+<Playground className="Rw_UI_Buttons_Radio dark_theme">
+  <Rw.UI.Buttons.Radio 
+    options={[
+      'hey',
+      'there',
+      'blue',
+      'cow'
+    ]}
+    onChange={(index) => console.log("selected", index)}
+  />
+</Playground>
+
+
+<PropsTable of={Rw.UI.Buttons.Radio} />

@@ -5,6 +5,7 @@ import styled, { css } from 'styled-components';
 const GridStyled = styled.div`
   display: grid;
 
+  ${props => props.gap && css`grid-gap: ${props.gap};`}
   ${props => props.columns && css`grid-template-columns: repeat(${props.columns}, ${props.width});`}
   ${props => (props.min || props.max) && css`
     grid-template-columns: repeat(auto-fit, minmax(${props.min}, ${props.max || 'auto'}));
@@ -47,6 +48,7 @@ export default class Flex extends React.Component {
     center: PropTypes.bool,
     end: PropTypes.bool,
     stretch: PropTypes.bool,
+    gap: PropTypes.string,
   };
 
   static defaultProps = {
@@ -62,6 +64,7 @@ export default class Flex extends React.Component {
     center: null,
     end: null,
     stretch: null,
+    gap: null,
   };
 
   constructor(props) {

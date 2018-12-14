@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 
 export default class Frame extends Component {
-
   static propTypes = {
     mode: PropTypes.string,
   }

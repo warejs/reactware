@@ -1,0 +1,30 @@
+---
+name: ToggleButton
+menu: UI
+route: /ui/button/toggle
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../../components';
+
+# UI: Toggle Buttoon
+
+Split Button control combining a button (typically invoking some default action).
+
+```jsx
+import * as RW from 'reactware';
+```
+
+<Playground className="Rw_UI_Buttons_Toggle dark_theme">
+  <Rw.UI.Buttons.Toggle
+    enabled={true}
+    onToggle={(state, event) => console.log(state, event)}
+  >
+    Dance Time
+  </Rw.UI.Buttons.Toggle>
+</Playground>
+
+<PropsTable of={Rw.UI.Buttons.Toggle} />
+
+
+

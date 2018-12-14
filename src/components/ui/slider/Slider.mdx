@@ -1,0 +1,82 @@
+---
+name: Slider
+menu: UI
+route: /ui/slider
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../components';
+
+# UI: Slider
+
+Slider control with a handle that can be moved up and down (vertical slider) or right and left (horizontal slider) on a bar to select a value (or a range if two handles are present)
+
+```jsx
+import * as RW from 'reactware';
+```
+
+<Playground className="Rw_UI_Slider dark_theme">
+  <Rw.UI.Slider 
+    max="100" 
+    onChange={(value) => console.log(value)}
+    step={10}
+  />
+</Playground>
+
+<Playground className="Rw_UI_Slider dark_theme">
+  <Rw.UI.Slider 
+    max="100" 
+    onChange={(value) => console.log(value)}
+    dashes
+    step={5}
+  />
+</Playground>
+
+<Playground className="Rw_UI_Slider dark_theme">
+  <Rw.UI.Slider 
+    max="100" 
+    onChange={(value) => console.log(value)}
+    labels
+    dashes
+    step={10}
+  />
+</Playground>
+
+
+
+> A vertical slider required a `height` prop.
+
+<Playground className="Rw_UI_Slider_Vertical dark_theme">
+  <Rw.UI.Slider 
+    max="100" 
+    onChange={(value) => console.log(value)} 
+    vertical={true}
+    height="151px"
+    step={10}
+  />
+</Playground>
+
+<Playground className="Rw_UI_Slider_Vertical dark_theme">
+  <Rw.UI.Slider 
+    max="100" 
+    onChange={(value) => console.log(value)} 
+    vertical={true}
+    dashes
+    height="151px"
+    step={25}
+  />
+</Playground>
+
+<Playground className="Rw_UI_Slider_Vertical dark_theme">
+  <Rw.UI.Slider 
+    max="100" 
+    onChange={(value) => console.log(value)} 
+    vertical={true}
+    dashes
+    labels
+    height="151px"
+    step={20}
+  />
+</Playground>
+
+<PropsTable of={Rw.UI.Slider} />

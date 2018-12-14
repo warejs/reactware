@@ -1,0 +1,34 @@
+---
+name: Cycle
+menu: UI
+route: /ui/button/cycle
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../../components';
+
+# UI: Cycle Button
+
+Cycle button is a button that cycles its content through two or more values
+
+
+```jsx
+import * as RW from 'reactware';
+```
+
+<Playground className="Rw_UI_Buttons_Cycle dark_theme">
+  <Rw.UI.Buttons.Cycle
+    default={1} 
+    options={[
+      'state 1',
+      'state 2',
+      'state 3',
+    ]}
+    onCycle={(index, option, event) => console.log("selected", index, option)}
+  />
+</Playground>
+
+<PropsTable of={Rw.UI.Buttons.Cycle} />
+
+
+

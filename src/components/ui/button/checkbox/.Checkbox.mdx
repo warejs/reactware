@@ -1,0 +1,25 @@
+---
+name: Checkbox
+menu: UI
+route: /ui/button/checkbox
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../../components';
+
+# UI: Checkbox
+
+Radio Button control which can be clicked upon to enable or disable an option
+
+```jsx
+import * as RW from 'reactware';
+```
+
+<Playground className="Rw_UI_Buttons_Checkbox dark_theme">
+  <Rw.UI.Buttons.Checkbox 
+    label="Show Overlays" 
+    onChange={(checked, e) => console.warn("final output", checked)} 
+  />
+</Playground>
+
+<PropsTable of={Rw.UI.Buttons.Checkbox} />

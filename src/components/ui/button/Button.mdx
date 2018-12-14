@@ -1,0 +1,109 @@
+---
+name: Buttons
+menu: UI
+route: /ui/buttons
+---
+
+# UI: Buttons
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../components';
+
+## Button
+
+Button control which can be clicked upon to perform an action
+
+```jsx
+import * as RW from 'reactware';
+```
+<Playground className="Rw_UI_Button dark_theme">
+  <Rw.UI.Button onClick={(event) => console.log("I was clicked")}>
+    Action
+  </Rw.UI.Button>
+</Playground>
+
+<PropsTable of={Rw.UI.Button} />
+
+
+## Checkbox
+
+Radio Button control which can be clicked upon to enable or disable an option
+
+<Playground className="Rw_UI_Buttons_Checkbox dark_theme">
+  <Rw.UI.Buttons.Checkbox 
+    label="Show Overlays" 
+    onChange={(checked, e) => console.log(checked)} 
+  />
+</Playground>
+
+<PropsTable of={Rw.UI.Buttons.Checkbox} />
+
+## Cycle
+
+Cycle button is a button that cycles its content through two or more values
+
+<Playground className="Rw_UI_Buttons_Cycle dark_theme">
+  <Rw.UI.Buttons.Cycle
+    default={1} 
+    options={[
+      'state 1',
+      'state 2',
+      'state 3',
+    ]}
+    onCycle={(index, option, event) => console.log("selected", index, option)}
+  />
+</Playground>
+
+<PropsTable of={Rw.UI.Buttons.Cycle} />
+
+## Radio
+
+Radio Button control which can be clicked upon to select one option from a selection of options
+
+<Playground className="Rw_UI_Buttons_Radio dark_theme">
+  <Rw.UI.Buttons.Radio 
+    options={[
+      'hey',
+      'there',
+      'blue',
+      'cow'
+    ]}
+    onChange={(index) => console.log("onChange", index)}
+  />
+</Playground>
+
+<PropsTable of={Rw.UI.Buttons.Radio} />
+
+## Split
+
+Split Button control combining a button (typically invoking some default action).
+
+<Playground className="Rw_UI_Buttons_Split dark_theme">
+  <Rw.UI.Buttons.Split
+    default={1} 
+    options={[
+      { label: 'Save', onClick: () => alert('saved') },
+      { label: 'Publish', onClick: () => alert('published') },
+      { label: 'Exit', onClick: () => alert('edit') }
+    ]}
+    onSelect={(index, option) => alert("selected", index, option)}
+  />
+</Playground>
+
+<PropsTable of={Rw.UI.Buttons.Split} />
+
+
+## Toggle
+
+Split Button control combining a button (typically invoking some default action).
+
+<Playground className="Rw_UI_Buttons_Toggle dark_theme">
+  <Rw.UI.Buttons.Toggle
+    enabled={true}
+    onToggle={(state, event) => console.log(state, event)}
+  >
+    Dance Time
+  </Rw.UI.Buttons.Toggle>
+</Playground>
+
+<PropsTable of={Rw.UI.Buttons.Toggle} />
