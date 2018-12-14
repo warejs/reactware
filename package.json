@@ -1,6 +1,6 @@
 {
   "name": "reactware",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Reactware is an open source toolkit for developing desktop PWA with HTML, CSS, and JS",
   "main": "dist/index.js",
   "module": "dist/index.js",
