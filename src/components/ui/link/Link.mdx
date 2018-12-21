@@ -1,0 +1,32 @@
+---
+name: Link
+menu: UI
+route: /ui/link
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../components';
+
+# UI: Link
+
+Link is atext with some kind of indicator (usually underlining and/or color) that indicates that clicking it will take one to another screen or page.
+
+
+```jsx
+import * as RW from 'reactware';
+```
+
+<Playground className="Rw_UI_Buttons_Split dark_theme">
+  <Rw.UI.Link to={"http://www.google.com"}>Google</Rw.UI.Link>
+</Playground>
+
+If you want to add a link without the navigating to another external page, you can exclude the to tag;
+
+<Playground className="Rw_UI_Buttons_Split dark_theme">
+  <Rw.UI.Link onClick={event => alert("clicked")}>Link</Rw.UI.Link>
+</Playground>
+
+<PropsTable of={Rw.UI.Link} />
+
+
+

@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import InputStyles from '../common/InputStyles';
+import * as Styles from '../styles';
 
-const InputSyled = styled.input` ${InputStyles} `;
+const InputSyled = styled.input`
+  ${Styles.input} 
+
+`;
 
 export default class Slider extends React.Component {
   static propTypes = {

@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
-import InputStyles from '../common/InputStyles';
+import styled from 'styled-components';
+import * as Styles from '../styles';
 
-const TextareaSyled = styled.textarea` ${InputStyles}
-  
+const TextareaSyled = styled.input`
+  ${Styles.input}
+
   resize: none;
 `;
 
@@ -18,8 +19,8 @@ export default class Textarea extends React.Component {
     placeholder: PropTypes.string,
     required: PropTypes.bool,
     rows: PropTypes.number,
-    wrap: PropTypes.oneOfType(['hard', 'soft']),
-    onChange: PropTypes.func.isRequired,
+    wrap: PropTypes.oneOf(['hard', 'soft']),
+    onChange: PropTypes.func,
   };
 
   static defaultProps = {
@@ -32,6 +33,7 @@ export default class Textarea extends React.Component {
     required: null,
     rows: 3,
     wrap: null,
+    onChange: () => {},
   };
 
   constructor(props) {
@@ -59,6 +61,8 @@ export default class Textarea extends React.Component {
         required,
         rows,
         wrap,
+        onChange,
+        value: v,
         ...rest
       },
       state: { value },
@@ -76,6 +80,7 @@ export default class Textarea extends React.Component {
         rows={rows}
         wrap={wrap}
         onChange={event => this.onChange(event)}
+        {...rest}
       />
     );
   }

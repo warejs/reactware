@@ -127,7 +127,7 @@ export default class Radio extends React.Component {
                 onChange={event => this.onChange(index, event)}
                 {...rest}
               />
-              <LabelStyled for={`radio-${id}-${index}`}>{option}</LabelStyled>
+              <LabelStyled htmlFor={`radio-${id}-${index}`}>{option}</LabelStyled>
             </Flex>
           ))
         }
