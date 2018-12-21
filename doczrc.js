@@ -48,6 +48,14 @@ export default {
             text-align: center;
             background: #eef1f5
           }
+
+          .Rw_Layouts_Grid_Alignments > div > div {
+            height: 75px;
+          }
+
+          .Rw_Layouts_Grid_Alignments > div > div > div {
+            border: 1px dotted silver;
+          }
           .Rw_Layouts_Absolute {
             height: 150px;
           }
@@ -79,6 +87,36 @@ export default {
 
           .Rw_Utils_Frame iframe {
             border: 1px dotted #ced4dd; 
+          }
+
+          .Rw_UI_Tooltip {
+            padding: 25px;
+            text-align: center;
+          }
+
+          .Rw_UI_Tooltip > span > div {
+            display: block;
+            position: relative;
+            height: 73px;
+            width: 96px;
+            border: 1px dotted gray;
+            border-radius: 3px;
+          }
+
+          .Rw_UI_Tooltip > span > div:after {
+            content: "Hover Me";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0px;
+            padding-top: 35%;
+            display: block;
+            position: absolute;
+            color: gray;
+          }
+
+          .Rw_UI_Tooltip_long {
+            padding-top: 5em !important;
           }
 
           .dark_theme {

@@ -1,0 +1,75 @@
+---
+name: Tooltip
+menu: UI
+route: /ui/tooltip
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../components';
+
+# UI: Tooltip
+
+Tooltip is a informational window which appears when the mouse hovers over another control.
+
+```jsx
+import * as RW from 'reactware';
+```
+
+## Simple Tooltip
+
+<Playground className="Rw_UI_Tooltip dark_theme">
+  <Rw.UI.Label title="You did it. Thanks!">Hover me</Rw.UI.Label>
+</Playground>
+
+> Note: We recomend the above simple default HTML5 tooltip (title tag). If more Customisation is required use the wrapped tooltip belllow:
+
+## Wrapped Tooltip
+
+<Playground className="Rw_UI_Tooltip dark_theme" style={{}}>
+  <Rw.UI.Tooltip contents={
+    <div>Find me at: <Rw.UI.Link to="warejs.org">@warejs</Rw.UI.Link></div>
+  }>
+    <div />
+  </Rw.UI.Tooltip>
+</Playground>
+
+If you want text to wrap, provide the `wrap` prop. Best used with a `width` attribute.
+
+<Playground className="Rw_UI_Tooltip Rw_UI_Tooltip_long dark_theme" style={{}}>
+  <Rw.UI.Tooltip wrap width={"80px"} contents={"A lot of text and a lot of content here please wrap me up so I'm not too big of a Tooltip."}>
+    <div />
+  </Rw.UI.Tooltip>
+</Playground>
+
+
+## Left Tooltip
+
+<Playground className="Rw_UI_Tooltip dark_theme">
+  <Rw.UI.Tooltip position="left" contents={<div>Find me at: <Rw.UI.Link to="warejs.org">@warejs</Rw.UI.Link></div>}>
+    <div />
+  </Rw.UI.Tooltip>
+</Playground>
+
+
+## Right Tooltip
+
+<Playground className="Rw_UI_Tooltip dark_theme" style={{}}>
+  <Rw.UI.Tooltip position="right" contents={<div>Find me at: <Rw.UI.Link to="warejs.org">@warejs</Rw.UI.Link></div>}>
+    <div />
+  </Rw.UI.Tooltip>
+</Playground>
+
+
+## Bottom Tooltip
+
+<Playground className="Rw_UI_Tooltip dark_theme" style={{}}>
+  <Rw.UI.Tooltip position="bottom" contents={<div>Find me at: <Rw.UI.Link to="warejs.org">@warejs</Rw.UI.Link></div>}>
+    <div />
+  </Rw.UI.Tooltip>
+</Playground>
+
+
+<PropsTable of={Rw.UI.Tooltip} />
+
+
+

@@ -1,0 +1,36 @@
+---
+name: Label
+menu: UI
+route: /ui/label
+---
+
+import { Playground, PropsTable } from 'docz'
+import * as Rw from '../../../components';
+
+# UI: Label
+
+Label is text used to describe another widget
+
+```jsx
+import * as RW from 'reactware';
+```
+
+<Playground className="Rw_UI_Buttons_Split dark_theme">
+  <Rw.UI.Label>Label</Rw.UI.Label>
+</Playground>
+
+Labels are best used along side for elements such as textarea as once clicked they can focus an input.
+
+> Note: This will be deprecated, as soon as [form layout](#layout/form) is added.
+
+<Playground className="Rw_UI_Label dark_theme">
+  <Rw.Layouts.Grid columns="2" centerleft widths="35px auto">
+    <Rw.UI.Label htmlFor="my-input">Label</Rw.UI.Label>
+    <Rw.UI.Textarea id="my-input" />
+  </Rw.Layouts.Grid>
+</Playground>
+
+<PropsTable of={Rw.UI.Label} />
+
+
+
