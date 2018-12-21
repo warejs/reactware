@@ -21,55 +21,10 @@ const GridStyled = styled.div`
     grid-column: span ${props.span}/span ${props.span};
   `}
 
-  ${props => props.self && props.start && css`justify-self: start;`}
+  ${props => props.self && props.start && css`justify-self: flex-start;`}
   ${props => props.self && props.center && css`justify-self: center;`}
   ${props => props.self && props.end && css`justify-self: flex-end;`}
   ${props => props.self && props.stretch && css`justify-self: stretch;`}
-
-  ${props => props.topleft && css`
-    align-items: start;
-    justify-items: start;
-  `}
-
-  ${props => props.topcenter && css`
-    align-items: start;
-    justify-items: center;
-  `}
-
-  ${props => props.topright && css`
-    align-items: start;
-    justify-items: end;
-  `}
-
-  ${props => props.centerleft && css`
-    align-items: center;
-    justify-items: start;
-  `}
-
-  ${props => props.center && css`
-    align-items: center;
-    justify-items: center;
-  `}
-
-  ${props => props.centerright && css`
-    align-items: center;
-    justify-items: end;
-  `}
-
-  ${props => props.bottomleft && css`
-    align-items: end;
-    justify-items: start;
-  `}
-
-  ${props => props.bottomcenter && css`
-    align-items: end;
-    justify-items: center;
-  `}
-
-  ${props => props.bottomright && css`
-    align-items: end;
-    justify-items: end;
-  `}
 
   ${props => props.track && css`
     display: block;
