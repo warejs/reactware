@@ -84,37 +84,6 @@ Span: `1`, `2`, `....`, `∞`,
   </Rw.Layouts.Grid>
 </Playground>
 
-## Alignment
-
-All items can be aligned at the same time if needed in a grid using aligments:
-
-Alignments: `topleft`, `topcenter`, `topright`, `centerleft`, `center`, `centerright`, `bottomleft`, `bottomcenter`, `bottomright`
-
-<Playground className="Rw_Layouts_Grid Rw_Layouts_Grid_Alignments">
-  <Rw.Layouts.Grid columns={3} gap={'15px'}>
-    <Rw.Layouts.Grid topleft><div>topleft</div></Rw.Layouts.Grid>
-    <Rw.Layouts.Grid topcenter><div>topleft</div></Rw.Layouts.Grid>
-    <Rw.Layouts.Grid topright><div>topleft</div></Rw.Layouts.Grid>
-
-    <Rw.Layouts.Grid centerleft><div>centerleft</div></Rw.Layouts.Grid>
-    <Rw.Layouts.Grid center><div>center</div></Rw.Layouts.Grid>
-    <Rw.Layouts.Grid centerright><div>centerright</div></Rw.Layouts.Grid>
-
-    <Rw.Layouts.Grid bottomleft><div>bottomleft</div></Rw.Layouts.Grid>
-    <Rw.Layouts.Grid bottomcenter><div>bottomcenter</div></Rw.Layouts.Grid>
-    <Rw.Layouts.Grid bottomright><div>bottomright</div></Rw.Layouts.Grid>
-  </Rw.Layouts.Grid>
-</Playground>
-
-Single item Example:
-
-<Playground className="Rw_Layouts_Grid">
-  <Rw.Layouts.Grid centerright >
-    <div>centerright</div>
-  </Rw.Layouts.Grid>
-</Playground>
-
-
 ## Self alignment
 
 Child items have the ability to be slef aligned, regardless of the parent aplighment..
