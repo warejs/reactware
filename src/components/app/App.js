@@ -44,8 +44,13 @@ const BodyStyled = styled.div`
 `;
 
 const SidebarStyled = styled.div`
+<<<<<<< HEAD
   -background: #535353;
   -padding: 3px;
+=======
+  background: #535353;
+  padding: 3px;
+>>>>>>> master
 `;
 
 const LeftStyled = styled.div`
@@ -88,12 +93,16 @@ export default class App extends React.Component {
   static propTypes = {
     menus: PropTypes.object,
     windows: PropTypes.array,
+<<<<<<< HEAD
     containers: PropTypes.object,
+=======
+>>>>>>> master
   };
 
   static defaultProps = {
     menus: {},
     windows: [],
+<<<<<<< HEAD
     menu: [],
     containers: {
       right: [],
@@ -101,6 +110,8 @@ export default class App extends React.Component {
       left: [],
       top: [],
     }
+=======
+>>>>>>> master
   };
 
   constructor(props) {
