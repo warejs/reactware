@@ -1,8 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
+import InputStyles from '../common/InputStyles';
 import Textbox from '../textbox';
 import Select from '../select';
+
+// border-top-right-radius: 3px;
+// border-bottom-right-radius: 3px;
+
+// Textbox
 
 export default class Combobox extends React.Component {
   static propTypes = {

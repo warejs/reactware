@@ -79,7 +79,7 @@ const LabelStyled = styled.label`
 
 export default class Checkbox extends React.Component {
   static propTypes = {
-    label: PropTypes.string,
+    label: PropTypes.bool,
     onChange: PropTypes.func.isRequired,
     checked: PropTypes.bool,
     disabled: PropTypes.bool,
@@ -133,7 +133,7 @@ export default class Checkbox extends React.Component {
             onChange={event => this.onChange(event)}
             {...rest}
           />
-          <LabelStyled htmlFor={`checkbox-${id}`}>{label}</LabelStyled>
+          <LabelStyled for={`checkbox-${id}`}>{label}</LabelStyled>
         </Flex>
       </div>
     );

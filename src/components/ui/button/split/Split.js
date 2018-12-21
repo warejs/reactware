@@ -32,7 +32,7 @@ const StyledSelect = styled(Select)`
 
 export default class Split extends React.Component {
   static propTypes = {
-    options: PropTypes.arrayOf(PropTypes.object).isRequired,
+    options: PropTypes.arrayOf(PropTypes.string).isRequired,
     default: PropTypes.number.isRequired,
     disabled: PropTypes.bool,
   };

@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import * as Styles from '../styles';
+import InputStyles from '../common/InputStyles';
 
-const SelectSyled = styled.select` 
-  ${Styles.input};
+const SelectSyled = styled.select` ${InputStyles}
 
   &:focus {
     color: white;
