@@ -11,6 +11,8 @@ export default {
   src: './src',
   base: `/v${version}/`,
   hashRouter: true,
+  wrapper: undefined,
+  indexHtml: '',
   themeConfig: {
     
     showPlaygroundEditor: true,
