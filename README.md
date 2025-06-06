@@ -1,6 +1,6 @@
 # Reactware
 
-## DOCUMENTATION: warejs.github.io/reactware/
+## DOCUMENTATION: https://warejs.github.io/reactware/
 
 Reactware is an open source toolkit for developing desktop PWA with HTML, CSS, and JS
 
